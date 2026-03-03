@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const navLinks = [
   { label: "Services", href: "#services" },
@@ -34,9 +35,9 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <a href="#contact" className="btn-primary !py-2.5 !px-5 !text-xs">
+          <Link to="/contact" className="btn-primary !py-2.5 !px-5 !text-xs">
             Let's Talk
-          </a>
+          </Link>
         </div>
 
         {/* Mobile toggle */}
@@ -69,13 +70,13 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="btn-primary mt-2 text-center"
                 onClick={() => setIsOpen(false)}
               >
                 Let's Talk
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}
