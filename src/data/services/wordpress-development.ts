@@ -1,0 +1,178 @@
+import { Layers, ShieldCheck, Gauge, Palette, ShoppingCart, Plug, Wrench, Users } from "lucide-react";
+import type { ServiceData } from "../services";
+
+export const wordpressDevData: ServiceData = {
+  slug: "wordpress-development",
+  icon: Layers,
+  title: "WordPress Development",
+  tagline: "Powerful WordPress sites your team will love managing",
+  heroDescription:
+    "Custom WordPress themes, plugins, and WooCommerce stores built for speed, security, and ease of use. No bloated page builders — just clean, hand-coded solutions that load fast and rank higher.",
+  heroStats: [
+    { value: "120+", label: "WordPress Sites Delivered" },
+    { value: "4.9/5", label: "Avg Client Rating" },
+    { value: "<2s", label: "Average Load Time" },
+    { value: "8+", label: "Years WordPress Expertise" },
+  ],
+  painPoints: [
+    {
+      problem: "Your WordPress site is painfully slow and losing visitors",
+      solution: "I build lightweight, optimized themes from scratch — no bloated page builders. Your site loads in under 2 seconds.",
+    },
+    {
+      problem: "You're paying for plugins that break after every update",
+      solution: "Custom-coded solutions that are stable, secure, and don't depend on third-party plugin updates.",
+    },
+    {
+      problem: "Your theme doesn't match your brand and looks generic",
+      solution: "Pixel-perfect custom themes designed around your brand identity — unique, professional, and memorable.",
+    },
+    {
+      problem: "You can't update content without calling a developer",
+      solution: "Intuitive admin panels with ACF Pro so your team can edit everything — no code required.",
+    },
+  ],
+  features: [
+    { title: "Custom Theme Development", description: "Bespoke themes built from scratch — fast, secure, and perfectly aligned with your brand. Zero bloat, 100% control.", icon: Palette },
+    { title: "Plugin Development", description: "Custom plugins for booking systems, calculators, integrations, and any unique functionality your business needs.", icon: Plug },
+    { title: "WooCommerce Stores", description: "Full e-commerce solutions with custom product pages, payment gateways, shipping logic, and inventory management.", icon: ShoppingCart },
+    { title: "Speed Optimization", description: "Core Web Vitals optimization, lazy loading, CDN setup, and caching strategies that get your site loading in under 2 seconds.", icon: Gauge },
+    { title: "Security Hardening", description: "Malware protection, firewall configuration, secure authentication, and regular security audits to keep hackers out.", icon: ShieldCheck },
+    { title: "Ongoing Maintenance", description: "Regular updates, backups, uptime monitoring, and priority support so you never worry about your site going down.", icon: Wrench },
+  ],
+  caseStudies: [
+    {
+      title: "E-commerce Platform for Fashion Brand",
+      category: "WooCommerce",
+      description: "Built a custom WooCommerce store with 500+ products, advanced filtering, size guides, and a loyalty program integration. Migrated from Shopify with zero downtime.",
+      results: [
+        { label: "Revenue Increase", value: "+180%" },
+        { label: "Page Load Time", value: "1.4s" },
+        { label: "Conversion Rate", value: "4.2%" },
+        { label: "Products Managed", value: "500+" },
+      ],
+      techUsed: ["WordPress", "WooCommerce", "ACF Pro", "Custom Plugin", "Razorpay"],
+    },
+    {
+      title: "Corporate Website for Fintech Startup",
+      category: "Custom Theme",
+      description: "Designed and developed a premium corporate website with a custom theme, blog, careers portal, and multi-language support. Optimized for lead generation.",
+      results: [
+        { label: "Lead Generation", value: "+250%" },
+        { label: "Bounce Rate", value: "-40%" },
+        { label: "Google PageSpeed", value: "95/100" },
+        { label: "Organic Traffic", value: "+320%" },
+      ],
+      techUsed: ["WordPress", "Custom Theme", "WPML", "ACF Pro", "Yoast SEO"],
+    },
+    {
+      title: "Membership Portal for Education Platform",
+      category: "Custom Plugin",
+      description: "Built a gated membership site with course management, progress tracking, certificate generation, and Stripe-powered subscriptions.",
+      results: [
+        { label: "Active Members", value: "2,000+" },
+        { label: "Subscription Revenue", value: "₹8L/mo" },
+        { label: "Completion Rate", value: "78%" },
+        { label: "Support Tickets", value: "-60%" },
+      ],
+      techUsed: ["WordPress", "Custom Plugin", "Stripe", "REST API", "React (frontend)"],
+    },
+  ],
+  process: [
+    { step: "01", title: "Discovery & Site Audit", description: "I audit your existing site (if any), analyze competitors, and map out the content architecture and feature requirements." },
+    { step: "02", title: "Design & Prototype", description: "Wireframes and high-fidelity mockups in Figma. You see exactly how your site will look before a single line of code is written." },
+    { step: "03", title: "Custom Development", description: "Hand-coded theme development, custom plugins, WooCommerce setup, and content migration — all on a staging environment." },
+    { step: "04", title: "Testing & QA", description: "Cross-browser testing, mobile responsiveness, performance optimization, security hardening, and SEO audit." },
+    { step: "05", title: "Launch & Training", description: "Go live with zero downtime. I train your team on the admin panel and provide video tutorials for content management." },
+    { step: "06", title: "Support & Growth", description: "30 days free support post-launch. Optional maintenance plans for updates, backups, and ongoing improvements." },
+  ],
+  techStack: [
+    { name: "WordPress", category: "CMS" },
+    { name: "PHP 8+", category: "Backend" },
+    { name: "ACF Pro", category: "Fields" },
+    { name: "WooCommerce", category: "E-commerce" },
+    { name: "Gutenberg", category: "Editor" },
+    { name: "MySQL", category: "Database" },
+    { name: "REST API", category: "Integration" },
+    { name: "WPML", category: "i18n" },
+    { name: "Yoast SEO", category: "SEO" },
+    { name: "Vite", category: "Build Tool" },
+    { name: "Tailwind CSS", category: "Styling" },
+    { name: "Docker", category: "DevOps" },
+  ],
+  pricing: [
+    {
+      name: "Starter",
+      price: "₹40,000",
+      description: "Perfect for small businesses needing a professional web presence",
+      features: [
+        "Up to 5 pages",
+        "Custom responsive design",
+        "Contact form with email alerts",
+        "Basic SEO setup",
+        "Mobile-first development",
+        "15 days post-launch support",
+      ],
+    },
+    {
+      name: "Business",
+      price: "₹1,20,000",
+      description: "For growing businesses that need advanced features and integrations",
+      features: [
+        "Up to 15 pages",
+        "Custom theme from scratch",
+        "ACF Pro admin panel",
+        "Blog with categories & tags",
+        "Speed optimization (<2s load)",
+        "3rd party integrations",
+        "30 days post-launch support",
+      ],
+      popular: true,
+    },
+    {
+      name: "Enterprise",
+      price: "₹3,00,000+",
+      description: "Complex sites, WooCommerce stores, and custom plugin development",
+      features: [
+        "Unlimited pages",
+        "WooCommerce / membership",
+        "Custom plugin development",
+        "Multi-language support",
+        "Advanced security hardening",
+        "CI/CD deployment pipeline",
+        "60 days support + maintenance",
+      ],
+    },
+  ],
+  testimonials: [
+    {
+      name: "Rahul Mehta",
+      role: "Founder",
+      company: "FinLeap Technologies",
+      quote: "Vineet rebuilt our entire WordPress site from a bloated theme to a custom-coded solution. Load time dropped from 8s to 1.5s, and our leads tripled within 2 months.",
+      rating: 5,
+    },
+    {
+      name: "Sarah Thompson",
+      role: "Marketing Director",
+      company: "StyleVault",
+      quote: "Our WooCommerce store handles 500+ products flawlessly. The custom admin panel is so intuitive that our content team updates products daily without any developer help.",
+      rating: 5,
+    },
+    {
+      name: "Ankit Sharma",
+      role: "CEO",
+      company: "EduPro Learning",
+      quote: "The membership portal Vineet built generates ₹8L monthly revenue. His custom plugin for certificate generation alone saved us from buying 3 separate premium plugins.",
+      rating: 5,
+    },
+  ],
+  faqs: [
+    { question: "Why custom WordPress over page builders like Elementor?", answer: "Page builders add 200-500KB of extra JavaScript, slow down your site, and create vendor lock-in. Custom-coded themes are 3-5x faster, more secure, and give you complete control over every aspect of your site." },
+    { question: "Can you migrate my site from another platform?", answer: "Yes. I've migrated sites from Shopify, Wix, Squarespace, Joomla, and older WordPress setups. I handle content, SEO redirects, and ensure zero downtime during the transition." },
+    { question: "Do you provide ongoing maintenance?", answer: "Yes. I offer monthly maintenance plans starting at ₹5,000/month that include WordPress core updates, plugin updates, daily backups, uptime monitoring, and priority support." },
+    { question: "How do you handle WordPress security?", answer: "I implement multiple layers: secure hosting configuration, Web Application Firewall, brute-force protection, two-factor authentication, file integrity monitoring, and regular security audits." },
+    { question: "Will I be able to update content myself?", answer: "Absolutely. I build custom admin panels using Advanced Custom Fields (ACF Pro) with an intuitive interface. I also provide video tutorials and documentation for your team." },
+    { question: "What's your typical turnaround time?", answer: "A starter site takes 2-3 weeks. Business sites take 4-6 weeks. Enterprise projects with WooCommerce or custom plugins typically take 8-12 weeks depending on complexity." },
+  ],
+};
