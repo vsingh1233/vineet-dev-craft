@@ -1,75 +1,93 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Code2 } from "lucide-react";
+import { ArrowRight, Code2, CheckCircle2 } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden pt-16">
-      {/* Subtle grid bg */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+    <section className="relative flex min-h-[90vh] items-center overflow-hidden pt-16">
+      {/* Warm gradient bg */}
+      <div className="absolute inset-0" style={{
+        background: "linear-gradient(180deg, hsl(40, 33%, 97%) 0%, hsl(40, 25%, 94%) 50%, hsl(40, 33%, 97%) 100%)",
       }} />
 
-      {/* Amber glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full opacity-[0.07]" style={{
-        background: "radial-gradient(circle, hsl(40, 95%, 55%), transparent 70%)",
+      {/* Decorative amber circle */}
+      <div className="absolute top-20 right-0 w-[500px] h-[500px] rounded-full opacity-[0.06] translate-x-1/3" style={{
+        background: "radial-gradient(circle, hsl(25, 90%, 48%), transparent 70%)",
       }} />
 
       <div className="container relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          className="max-w-3xl"
-        >
-          {/* Badge */}
-          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-1.5">
-            <Code2 size={14} className="text-primary" />
-            <span className="font-display text-xs text-muted-foreground">
-              10+ Years of Experience
-            </span>
-          </div>
+        <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+          >
+            {/* Badge */}
+            <div className="section-label mb-8">
+              <Code2 size={14} />
+              <span>10+ Years · Full-Stack Developer</span>
+            </div>
 
-          <h1 className="font-display text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-            Building the web,
-            <br />
-            <span className="text-gradient">one line at a time.</span>
-          </h1>
+            <h1 className="font-display text-4xl font-extrabold leading-[1.1] tracking-tight text-navy sm:text-5xl lg:text-6xl">
+              Your vision,
+              <br />
+              <span className="text-gradient">expertly built.</span>
+            </h1>
 
-          <p className="mt-6 max-w-lg font-body text-lg leading-relaxed text-muted-foreground md:text-xl">
-            Hi, I'm <span className="text-foreground font-medium">Vineet</span> — a full-stack developer crafting 
-            high-performance websites, web apps, and AI-powered solutions for businesses worldwide.
-          </p>
+            <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
+              Hi, I'm <strong className="text-navy font-semibold">Vineet</strong> — I help businesses 
+              grow with high-performance websites, web applications, and AI-powered solutions 
+              that convert visitors into customers.
+            </p>
 
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <a
-              href="#services"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-7 py-3.5 font-display text-sm font-semibold text-primary-foreground transition-all hover:opacity-90 glow"
-            >
-              View Services
-              <ArrowRight size={16} />
-            </a>
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-secondary px-7 py-3.5 font-display text-sm font-semibold text-secondary-foreground transition-all hover:bg-muted"
-            >
-              Get in Touch
-            </a>
-          </div>
+            {/* Trust signals */}
+            <div className="mt-6 flex flex-col gap-2">
+              {[
+                "200+ projects delivered across 15+ industries",
+                "Clients from USA, UK, Australia & India",
+                "Transparent pricing, on-time delivery",
+              ].map((point) => (
+                <div key={point} className="flex items-center gap-2.5">
+                  <CheckCircle2 size={16} className="text-primary shrink-0" />
+                  <span className="text-sm text-muted-foreground">{point}</span>
+                </div>
+              ))}
+            </div>
 
-          {/* Stats */}
-          <div className="mt-16 flex gap-12 border-t border-border pt-8">
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+              <a href="#contact" className="btn-primary">
+                Start Your Project
+                <ArrowRight size={16} />
+              </a>
+              <a href="#services" className="btn-outline">
+                Explore Services
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Stats cards on right */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+            className="grid grid-cols-2 gap-4"
+          >
             {[
-              { value: "10+", label: "Years Experience" },
-              { value: "200+", label: "Projects Delivered" },
-              { value: "50+", label: "Happy Clients" },
-            ].map((stat) => (
-              <div key={stat.label}>
-                <div className="font-display text-2xl font-bold text-gradient">{stat.value}</div>
-                <div className="mt-1 font-body text-xs text-muted-foreground">{stat.label}</div>
+              { value: "10+", label: "Years of Experience", desc: "Since 2014" },
+              { value: "200+", label: "Projects Delivered", desc: "Across all platforms" },
+              { value: "50+", label: "Happy Clients", desc: "Worldwide" },
+              { value: "99%", label: "Client Retention", desc: "They keep coming back" },
+            ].map((stat, i) => (
+              <div
+                key={stat.label}
+                className={`card-elevated p-6 ${i === 0 ? 'lg:mt-8' : ''} ${i === 3 ? 'lg:-mt-4' : ''}`}
+              >
+                <div className="text-3xl font-extrabold text-gradient">{stat.value}</div>
+                <div className="mt-2 text-sm font-semibold text-navy">{stat.label}</div>
+                <div className="mt-1 text-xs text-muted-foreground">{stat.desc}</div>
               </div>
             ))}
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
