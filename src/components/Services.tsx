@@ -52,12 +52,12 @@ const Services = () => {
                     {service.title}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {service.description}
+                    {service.heroDescription}
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    {service.techStack.slice(0, 3).map((tag) => (
-                      <span key={tag} className="rounded-md bg-secondary px-2.5 py-1 text-xs font-medium text-secondary-foreground">
-                        {tag}
+                    {service.techStack.slice(0, 3).map((tech) => (
+                      <span key={tech.name} className="rounded-md bg-secondary px-2.5 py-1 text-xs font-medium text-secondary-foreground">
+                        {tech.name}
                       </span>
                     ))}
                   </div>
