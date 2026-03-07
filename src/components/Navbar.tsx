@@ -9,7 +9,7 @@ const navLinks = [
   { label: "Process", href: "#process" },
   { label: "About", href: "#about" },
   { label: "Testimonials", href: "#testimonials" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Blog", href: "/blog", isRoute: true },
 ];
 
 const Navbar = () => {
@@ -26,15 +26,25 @@ const Navbar = () => {
 
         {/* Desktop */}
         <div className="hidden items-center gap-7 lg:flex">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-navy"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) =>
+            'isRoute' in link && link.isRoute ? (
+              <Link
+                key={link.href}
+                to={link.href}
+                className="text-sm font-medium text-muted-foreground transition-colors hover:text-navy"
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-sm font-medium text-muted-foreground transition-colors hover:text-navy"
+              >
+                {link.label}
+              </a>
+            )
+          )}
           <Link to="/contact" className="btn-primary !py-2.5 !px-5 !text-xs">
             Let's Talk
           </Link>
@@ -60,16 +70,27 @@ const Navbar = () => {
             className="border-t border-border bg-background lg:hidden"
           >
             <div className="container flex flex-col gap-4 py-6">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="text-muted-foreground font-medium transition-colors hover:text-navy"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map((link) =>
+                'isRoute' in link && link.isRoute ? (
+                  <Link
+                    key={link.href}
+                    to={link.href}
+                    className="text-muted-foreground font-medium transition-colors hover:text-navy"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    className="text-muted-foreground font-medium transition-colors hover:text-navy"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                )
+              )}
               <Link
                 to="/contact"
                 className="btn-primary mt-2 text-center"
