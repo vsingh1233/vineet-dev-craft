@@ -9,7 +9,7 @@ const navLinks = [
   { label: "Process", href: "#process" },
   { label: "About", href: "#about" },
   { label: "Testimonials", href: "#testimonials" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Blog", href: "/blog", isRoute: true },
 ];
 
 const Navbar = () => {
