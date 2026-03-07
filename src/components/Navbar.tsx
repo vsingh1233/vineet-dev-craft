@@ -26,15 +26,25 @@ const Navbar = () => {
 
         {/* Desktop */}
         <div className="hidden items-center gap-7 lg:flex">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-navy"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) =>
+            'isRoute' in link && link.isRoute ? (
+              <Link
+                key={link.href}
+                to={link.href}
+                className="text-sm font-medium text-muted-foreground transition-colors hover:text-navy"
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-sm font-medium text-muted-foreground transition-colors hover:text-navy"
+              >
+                {link.label}
+              </a>
+            )
+          )}
           <Link to="/contact" className="btn-primary !py-2.5 !px-5 !text-xs">
             Let's Talk
           </Link>
