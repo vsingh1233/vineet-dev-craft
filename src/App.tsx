@@ -7,6 +7,9 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ServicePage from "./pages/ServicePage";
 import ContactPage from "./pages/ContactPage";
+import BlogPage from "./pages/BlogPage";
+import BlogPostPage from "./pages/BlogPostPage";
+import AuthorPage from "./pages/AuthorPage";
 
 const queryClient = new QueryClient();
 
