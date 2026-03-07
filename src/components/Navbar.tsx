@@ -70,16 +70,27 @@ const Navbar = () => {
             className="border-t border-border bg-background lg:hidden"
           >
             <div className="container flex flex-col gap-4 py-6">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="text-muted-foreground font-medium transition-colors hover:text-navy"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map((link) =>
+                'isRoute' in link && link.isRoute ? (
+                  <Link
+                    key={link.href}
+                    to={link.href}
+                    className="text-muted-foreground font-medium transition-colors hover:text-navy"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    className="text-muted-foreground font-medium transition-colors hover:text-navy"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                )
+              )}
               <Link
                 to="/contact"
                 className="btn-primary mt-2 text-center"
