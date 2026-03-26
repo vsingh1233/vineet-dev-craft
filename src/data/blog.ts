@@ -189,7 +189,7 @@ Choose the right state management approach based on your needs. Not every app ne
 
 Performance optimization is an ongoing process. Start with measurement, apply targeted optimizations, and continuously monitor your metrics.
     `,
-    coverImage: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1200&h=600&fit=crop",
+    coverImage: reactImg,
     category: "React",
     tags: ["React", "Performance", "JavaScript", "Frontend"],
     author: authors[0],
