@@ -290,7 +290,7 @@ WordPress sites can be fast with the right approach:
 
 WordPress remains an excellent choice for content-driven websites. The key is knowing when it's the right tool and how to optimize it properly.
     `,
-    coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop",
+    coverImage: wordpressImg,
     category: "WordPress",
     tags: ["WordPress", "CMS", "Web Development", "PHP"],
     author: authors[0],
