@@ -1,3 +1,10 @@
+import laravelImg from "@/assets/blog/laravel-2025.jpg";
+import reactImg from "@/assets/blog/react-performance.jpg";
+import aiImg from "@/assets/blog/ai-integration.jpg";
+import wordpressImg from "@/assets/blog/wordpress-2025.jpg";
+import cleanCodeImg from "@/assets/blog/clean-code.jpg";
+import tailwindImg from "@/assets/blog/tailwind-css.jpg";
+
 export interface Author {
   id: string;
   name: string;
