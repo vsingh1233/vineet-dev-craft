@@ -392,7 +392,7 @@ Tailwind's responsive modifiers make building adaptive layouts intuitive.
 
 A well-structured Tailwind setup is the foundation for consistent, maintainable designs.
     `,
-    coverImage: "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=1200&h=600&fit=crop",
+    coverImage: tailwindImg,
     category: "CSS",
     tags: ["Tailwind CSS", "Design System", "Frontend", "CSS"],
     author: authors[0],
