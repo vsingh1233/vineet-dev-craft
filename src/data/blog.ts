@@ -343,7 +343,7 @@ Always leave the code cleaner than you found it. Small improvements compound ove
 
 Clean code is a practice, not a destination. Every line you write is an opportunity to make your codebase better.
     `,
-    coverImage: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=1200&h=600&fit=crop",
+    coverImage: cleanCodeImg,
     category: "Best Practices",
     tags: ["Clean Code", "Best Practices", "Software Engineering"],
     author: authors[1],
