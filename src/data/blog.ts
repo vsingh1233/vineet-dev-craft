@@ -119,7 +119,7 @@ With over 75,000 GitHub stars and a vibrant community, getting help with Laravel
 
 Laravel's combination of elegant syntax, powerful features, and a thriving ecosystem makes it the best choice for PHP development in 2025. Whether you're building a simple blog or a complex SaaS application, Laravel has you covered.
     `,
-    coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=600&fit=crop",
+    coverImage: laravelImg,
     category: "PHP",
     tags: ["Laravel", "PHP", "Backend", "Web Development"],
     author: authors[0],
