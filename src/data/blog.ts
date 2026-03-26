@@ -1,3 +1,10 @@
+import laravelImg from "@/assets/blog/laravel-2025.jpg";
+import reactImg from "@/assets/blog/react-performance.jpg";
+import aiImg from "@/assets/blog/ai-integration.jpg";
+import wordpressImg from "@/assets/blog/wordpress-2025.jpg";
+import cleanCodeImg from "@/assets/blog/clean-code.jpg";
+import tailwindImg from "@/assets/blog/tailwind-css.jpg";
+
 export interface Author {
   id: string;
   name: string;
@@ -112,7 +119,7 @@ With over 75,000 GitHub stars and a vibrant community, getting help with Laravel
 
 Laravel's combination of elegant syntax, powerful features, and a thriving ecosystem makes it the best choice for PHP development in 2025. Whether you're building a simple blog or a complex SaaS application, Laravel has you covered.
     `,
-    coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=600&fit=crop",
+    coverImage: laravelImg,
     category: "PHP",
     tags: ["Laravel", "PHP", "Backend", "Web Development"],
     author: authors[0],
@@ -182,7 +189,7 @@ Choose the right state management approach based on your needs. Not every app ne
 
 Performance optimization is an ongoing process. Start with measurement, apply targeted optimizations, and continuously monitor your metrics.
     `,
-    coverImage: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1200&h=600&fit=crop",
+    coverImage: reactImg,
     category: "React",
     tags: ["React", "Performance", "JavaScript", "Frontend"],
     author: authors[0],
@@ -235,7 +242,7 @@ Semantic search understands intent, not just keywords. By converting your conten
 
 AI integration is a journey, not a destination. Start with the simplest implementation that adds value, then iterate based on user feedback.
     `,
-    coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop",
+    coverImage: aiImg,
     category: "AI",
     tags: ["AI", "Machine Learning", "API", "Web Development"],
     author: authors[1],
@@ -283,7 +290,7 @@ WordPress sites can be fast with the right approach:
 
 WordPress remains an excellent choice for content-driven websites. The key is knowing when it's the right tool and how to optimize it properly.
     `,
-    coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop",
+    coverImage: wordpressImg,
     category: "WordPress",
     tags: ["WordPress", "CMS", "Web Development", "PHP"],
     author: authors[0],
@@ -336,7 +343,7 @@ Always leave the code cleaner than you found it. Small improvements compound ove
 
 Clean code is a practice, not a destination. Every line you write is an opportunity to make your codebase better.
     `,
-    coverImage: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=1200&h=600&fit=crop",
+    coverImage: cleanCodeImg,
     category: "Best Practices",
     tags: ["Clean Code", "Best Practices", "Software Engineering"],
     author: authors[1],
@@ -385,7 +392,7 @@ Tailwind's responsive modifiers make building adaptive layouts intuitive.
 
 A well-structured Tailwind setup is the foundation for consistent, maintainable designs.
     `,
-    coverImage: "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=1200&h=600&fit=crop",
+    coverImage: tailwindImg,
     category: "CSS",
     tags: ["Tailwind CSS", "Design System", "Frontend", "CSS"],
     author: authors[0],
