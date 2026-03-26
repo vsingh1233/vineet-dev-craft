@@ -59,6 +59,21 @@ const TechStack = () => {
             </div>
           ))}
         </motion.div>
+
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mt-14 text-center"
+        >
+          <p className="text-muted-foreground mb-4">Not sure which tech stack fits your project?</p>
+          <a href="/contact" className="btn-outline">
+            Get a Free Tech Consultation
+            <span className="text-lg leading-none">→</span>
+          </a>
+        </motion.div>
       </div>
     </section>
   );
