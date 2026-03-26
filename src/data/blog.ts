@@ -242,7 +242,7 @@ Semantic search understands intent, not just keywords. By converting your conten
 
 AI integration is a journey, not a destination. Start with the simplest implementation that adds value, then iterate based on user feedback.
     `,
-    coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop",
+    coverImage: aiImg,
     category: "AI",
     tags: ["AI", "Machine Learning", "API", "Web Development"],
     author: authors[1],
