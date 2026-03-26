@@ -70,6 +70,21 @@ const Process = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mt-14 text-center"
+        >
+          <a href="/contact" className="btn-primary">
+            Start Your Project Today
+            <span className="text-lg leading-none">→</span>
+          </a>
+          <p className="mt-3 text-xs text-muted-foreground">Typical response time: under 4 hours</p>
+        </motion.div>
       </div>
     </section>
   );
