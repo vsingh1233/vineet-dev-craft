@@ -310,9 +310,9 @@ const WpMigrationTool = () => {
             </div>
 
             {/* Warning */}
-            <div className="mt-8 rounded-xl border border-amber-500/30 bg-amber-500/5 p-5">
+            <div className="mt-8 rounded-xl border border-primary/30 bg-primary/5 p-5">
               <h3 className="font-semibold text-foreground flex items-center gap-2 mb-2">
-                <span className="text-amber-500">⚠</span> Important Notes
+                <span className="text-primary">⚠</span> Important Notes
               </h3>
               <ul className="text-sm text-muted-foreground space-y-2 list-disc list-inside">
                 <li><strong className="text-foreground">Always backup</strong> your database before running any migration queries.</li>
