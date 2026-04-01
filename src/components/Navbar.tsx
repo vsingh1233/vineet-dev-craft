@@ -10,6 +10,7 @@ const navLinks = [
   { label: "About", href: "#about" },
   { label: "Testimonials", href: "#testimonials" },
   { label: "Blog", href: "/blog", isRoute: true },
+  { label: "Tools", href: "/tools/wordpress-migration", isRoute: true },
 ];
 
 const Navbar = () => {

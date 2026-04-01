@@ -25,6 +25,7 @@ const App = () => (
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="/author/:slug" element={<AuthorPage />} />
+          <Route path="/tools/wordpress-migration" element={<WpMigrationTool />} />
           <Route path="/:slug/" element={<ServicePage />} />
           <Route path="/contact" element={<ContactPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
